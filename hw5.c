@@ -45,6 +45,7 @@ void run_test(const char *filename, int rank, int size, size_t block_size, int n
         MPI_File_write_at(file, offset, buffer, block_size, MPI_BYTE, &status);
     }
 
+    MPI_File_sync(file);
     MPI_Barrier(MPI_COMM_WORLD);
     end = aimos_clock_read();
 
