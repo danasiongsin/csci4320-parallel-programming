@@ -11,31 +11,57 @@
 #include "ross.h"
 
 //Example enumeration of message type... could also use #defines
-typedef enum {
-  HELLO,
-  GOODBYE,
+//message types for stock market
+typedef enum { 
+  MARKET_OPEN,            // start of trading day
+  HOURLY_UPDATE,          // hourly count of stock volume, there are 6 ticks in a trading day
+  MARKET_CLOSE,   
+  SECTOR_CORRELATION,     // for closely related companies or sectors the performance will spread
+  // NEWS_BROADCAST,      // market news 
+  ORDER_IMBALANCE_UPDATE  // update before market opens to adjust opening price based on previous buy/sell pressure 
 } message_type;
 
 //Message struct
 //   this contains all data sent in an event
 typedef struct {
-  message_type type;
-  double contents;
+  int stock_id;
+  int day;
+  double price;
+  double volume;
+  double obv;                 //on-balance volume
+  double sector_impact;
+  // double news_sentiment;   // from -1 to 1 for negative or positive imapct
   tw_lpid sender;
 } message;
 
 
 //State struct
 //   this defines the state of each LP
+// for stock market one LP = one stock
 typedef struct {
-  int rcvd_count_H;
-  int rcvd_count_G;
-  double value;
+  double historical_close;
+  double historical_volume;
+  double historical_obv;
+
+  double current_opening;
+  double current_close;
+  double current_volume;
+  double current_obv;
+  int current_day;
+
+  double accumulated_orders;  // this is for order imbalance update
+  double accumulated_volume;
+  int cur_ticks;
+
+  double sector_id;           
+  double volatility;          
 } state;
 
 
 //Command Line Argument declarations
-extern unsigned int setting_1;
+extern unsigned int training_years;
+extern unsigned int simulation_years;
+extern unsigned int num_stocks;
 
 //Global variables used by both main and driver
 // - this defines the LP types
