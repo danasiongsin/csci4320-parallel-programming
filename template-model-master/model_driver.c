@@ -13,14 +13,20 @@
 #include "ross.h"
 #include "model.h"
 
+
 //Helper Functions
 void SWAP (double *a, double *b) {
   double tmp = *a;
   *a = *b;
   *b = tmp;
 }
-
 /*
+//parse the csv data ????
+static void parse_data(FILE *stream) {
+    
+}
+
+
 //calculate from closing price, news, and order imbalance
 double opening_price() {
 
@@ -82,21 +88,72 @@ void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
   // initialize the bit field
   *(int *) bf = (int) 0;
 
+  //save old close in msg scratch so reverse can restore it
+  in_msg->contents = s->current_close;
 
-  // update the current state
-  // however, save the old value in the 'reverse' message
-  SWAP(&(s->value), &(in_msg->contents)); // MIGHT NOT NEED FOR STOCKS!!!!!!!!!!
+  //advance day when market is open
+  int day = in_msg->day;
 
+  //pull today's CSV row
+  const csv_row *row = NULL;
+  if (g_stocks && s->stock_id < g_num_stocks) {
+    stock_data *sd = &g_stocks[s->stock_id];
+    if (day >= 0 && (size_t)day < sd->count) {
+      row = &sd->rows[day];
+    }
+  }
 
-  /* use a state for every event -------------------------------------------------------
-  */
+  // use a state for every event -------------------------------------------------------
   // handle the message
   switch (in_msg->type) {
+
     case MARKET_OPEN: {
-      break;
+      //init all day opening param: 
+      s->current_day = day;
+      s->accumulated_orders = 0.0;
+      s->accumulated_volume = 0.0;
+      s->cur_ticks = 0;
+
+      //if we have csv data for the day, copy the values into the state
+
+      //schedule the first hourly update
+      tw_event *e = tw_event_new(self, 2, lp);
+      message *msg = tw_event_data(e);
+      msg->type = HOURLY_UPDATE;
+      msg->stock_id = self;
+      msg->day = day;
+      //fill_msg_from_state(msg,s);
+      tw_event_send(e);
+      break;      
     }
 
     case HOURLY_UPDATE: {
+      s->cur_ticks++;
+
+      //if we have the csv data
+      s->accumulated_volume += row->volume / 6.0;
+
+      //if we are not at the last tick, schedule the next:
+      if (s->cur_ticks < 6) {
+        tw_event *e = tw_event_new(self, 2, lp);
+        message *msg = tw_event_data(e);
+        msg->type = HOURLY_UPDATE;
+        msg->stock_id = self;
+        msg->day = day;
+
+        tw_event_send(e);
+      } else {
+        //close the market otherwise
+
+        tw_event *e = tw_event_new(self, 2, lp);
+        message *msg = tw_event_data(e);
+        msg->type = MARKET_CLOSE;
+        msg->stock_id = self;
+        msg->day = day;
+
+        tw_event_send(e);
+      }
+
       break;
     }
 
@@ -104,7 +161,7 @@ void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
       break;
     }
     
-     /*
+     /* NOTE: if we want to include news, then we could use tw_random_unif for random prob of injecting 'news'
     case NEWS_BROADCAST: {
       break;
     }
