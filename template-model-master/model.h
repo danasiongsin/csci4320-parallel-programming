@@ -19,7 +19,7 @@ typedef struct {
     double close;
     double volume;
     
-    // New pre-computed dataset columns
+    // Pre-computed dataset columns
     double sma_50;
     double sma_200;
     double rsi_14;
@@ -41,11 +41,13 @@ typedef enum {
   HOURLY_UPDATE,
   MARKET_CLOSE,   
   SECTOR_CORRELATION,
-  ORDER_IMBALANCE_UPDATE
+  ORDER_IMBALANCE_UPDATE,
+  MARKET_UPDATE,
+  PLACE_ORDER
 } message_type;
 
 typedef struct {
-  message_type type;   // CRITICAL: Type identifier for the switch statement
+  message_type type;   
   int stock_id;
   int day;
   double open;
@@ -56,14 +58,13 @@ typedef struct {
   double obv;
   double daily_return_pct;
   
-  double previous_close; // Used by reverse handler to undo state changes
+  double previous_close; 
   tw_lpid sender;
   int order_type;      // 1 for BUY, -1 for SELL
   int quantity;        // Number of shares
 } message;
 
 // --- LP State ---
-// Renamed from data_history to state so it matches the driver signatures
 typedef struct {
   int stock_id;
   double current_opening;
@@ -85,6 +86,7 @@ typedef struct {
 extern stock_data *g_stocks;
 extern int g_num_stocks;
 extern tw_lptype model_lps[];
+extern int g_strategy_id;  // Command line argument global
 
 // --- Function Declarations ---
 extern void model_init(state *s, tw_lp *lp);

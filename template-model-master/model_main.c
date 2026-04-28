@@ -8,9 +8,9 @@
 #include "ross.h"
 #include "model.h"
 
-// Define LP types
-// these are the functions called by ROSS for each LP
-// multiple sets can be defined (for multiple LP types)
+// Define the global command line variable
+int g_strategy_id = 0; 
+
 tw_lptype model_lps[] = {
   {
     (init_f) model_init,
@@ -25,10 +25,10 @@ tw_lptype model_lps[] = {
   { 0 },
 };
 
-//Define command line arguments default values
-// Add your command line opts
+// Expose the argument to the command line
 const tw_optdef model_opts[] = {
-	TWOPT_GROUP("ROSS Model"),
+	TWOPT_GROUP("ROSS Model Options"),
+	TWOPT_UINT("strategy", g_strategy_id, "Force a specific strategy (0=Random, 1=MeanRev, 2=Trend, 3=Noise)"),
 	TWOPT_END(),
 };
 
@@ -40,16 +40,14 @@ int model_main (int argc, char* argv[]) {
 	tw_opt_add(model_opts);
 	tw_init(&argc, &argv);
 
-	// Load historical data prior to starting the simulation
-	if (g_tw_mynode == 0) { // Ensures we don't try to open the file 100 times if running 100 PEs
+	if (g_tw_mynode == 0) { 
 	    csv_load("SP500.csv");
 	}
 
-	// Set up LPs within ROSS
-	num_lps_per_pe = 1; // Increase this based on how many entities you want on each processor
+	// Set up LPs within ROSS (1 Exchange + 9 Traders per core for testing)
+	num_lps_per_pe = 10; 
 	tw_define_lps(num_lps_per_pe, sizeof(message));
 	
-	// Register the LP types
 	g_tw_lp_types = model_lps;
 	tw_lp_setup_types();
 

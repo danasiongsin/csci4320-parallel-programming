@@ -13,21 +13,17 @@
 #include "ross.h"
 #include "model.h"
 
-// Global dataset definitions
 stock_data *g_stocks = NULL;
 int g_num_stocks = 0;
 
 void model_init (state *s, tw_lp *lp) {
     int self = lp->gid;
     
-    // Initialize base state
     s->stock_id = self;
     s->current_day = 0;
 
     if (self == 0) {
-        // ==========================================
-        //         EXCHANGE LP INIT (GID 0)
-        // ==========================================
+        // --- EXCHANGE ---
         s->current_opening = 0.0;
         s->current_close = 0.0;
         s->current_volume = 0.0;
@@ -35,7 +31,6 @@ void model_init (state *s, tw_lp *lp) {
         s->accumulated_orders = 0.0;
         s->cur_ticks = 0;
 
-        // Kick off the market clock
         tw_event *e = tw_event_new(self, 1, lp);
         message *msg = tw_event_data(e);
         msg->type = MARKET_OPEN;
@@ -43,14 +38,19 @@ void model_init (state *s, tw_lp *lp) {
         msg->sender = self;
         tw_event_send(e);
     } else {
-        // ==========================================
-        //         TRADER LP INIT (GID > 0)
-        // ==========================================
-        s->cash = 100000.0;         // Starting bankroll
-        s->current_holdings = 0;    // Starting shares
-        s->strategy_id = 1;         // Assign Strategy (1 = Mean Reversion)
+        // --- TRADER ---
+        s->cash = 100000.0;         
+        s->current_holdings = 0;    
         
-        // Kick off the trader's daily check
+        // Assign strategy based on command line argument
+        if (g_strategy_id == 0) {
+            // Randomly assign 1, 2, or 3
+            s->strategy_id = tw_rand_integer(lp->rng, 1, 3);
+        } else {
+            // Force the specific strategy
+            s->strategy_id = g_strategy_id;
+        }
+        
         tw_event *e = tw_event_new(self, 1, lp);
         message *msg = tw_event_data(e);
         msg->type = MARKET_UPDATE;
@@ -62,14 +62,10 @@ void model_init (state *s, tw_lp *lp) {
 
 void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
     int self = lp->gid;
-    *(int *) bf = (int) 0; // Initialize bitfield
-    
-    // 1. Save data for reverse handler BEFORE changing state
+    *(int *) bf = (int) 0; 
     in_msg->previous_close = s->current_close;
-    
     int day = in_msg->day;
     
-    // 2. Fetch row dynamically from global dataset, with dummy fallback
     csv_row *row = NULL;
     csv_row dummy_row = {day, 100.0, 105.0, 95.0, 102.0, 100000.0, 100.0, 98.0, 45.0, 1.2, 0.5, 110.0, 90.0};
     
@@ -79,11 +75,8 @@ void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
         row = &dummy_row;
     }
 
-    // 3. Process Event based on LP Type
     if (self == 0) {
-        // ==========================================
-        //         EXCHANGE LP LOGIC (GID 0)
-        // ==========================================
+        // --- EXCHANGE LOGIC ---
         switch (in_msg->type) {
             case MARKET_OPEN: {
                 s->current_day = day;
@@ -123,8 +116,7 @@ void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
             }
             case MARKET_CLOSE: {
                 s->current_close = row->close;
-                
-                tw_event *e = tw_event_new(self, 12, lp); // Jump 12 hours forward for overnight
+                tw_event *e = tw_event_new(self, 12, lp); 
                 message *msg = tw_event_data(e);
                 msg->type = MARKET_OPEN;
                 msg->day = day + 1;
@@ -132,7 +124,6 @@ void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
                 break;
             }
             case PLACE_ORDER: {
-                // Accounting ledger for the simulation
                 s->accumulated_orders += 1;
                 s->accumulated_volume += in_msg->quantity;
                 break;
@@ -142,47 +133,61 @@ void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
         }
     } 
     else {
-        // ==========================================
-        //         TRADER LP LOGIC (GID > 0)
-        // ==========================================
+        // --- TRADER LOGIC ---
         switch (in_msg->type) {
             case MARKET_UPDATE: {
                 s->current_day = day;
                 int order_quantity = 0;
-                int order_type = 0; // 1 for BUY, -1 for SELL
+                int order_type = 0; 
                 
-                // Initialize message scratchpad to 0 in case no trade happens
                 in_msg->order_type = 0;
                 in_msg->quantity = 0;
                 
-                // --- STRATEGY: MEAN REVERSION ---
+                // Strategy 1: Mean Reversion
                 if (s->strategy_id == 1) { 
                     if (row->rsi_14 < 30.0 && s->cash >= row->close * 10) {
-                        order_type = 1; // BUY
+                        order_type = 1; 
                         order_quantity = 10;
                     } else if (row->rsi_14 > 70.0 && s->current_holdings > 0) {
-                        order_type = -1; // SELL
+                        order_type = -1; 
                         order_quantity = s->current_holdings; 
                     }
                 } 
+                // Strategy 2: Trend Follower
+                else if (s->strategy_id == 2) {
+                    if (row->macd > row->macd_signal && s->cash >= row->close * 10) {
+                        order_type = 1; 
+                        order_quantity = 10;
+                    } else if (row->macd < row->macd_signal && s->current_holdings > 0) {
+                        order_type = -1; 
+                        order_quantity = s->current_holdings;
+                    }
+                }
+                // Strategy 3: Noise Trader
+                else if (s->strategy_id == 3) {
+                    if (tw_rand_unif(lp->rng) < 0.05) { 
+                        if (tw_rand_unif(lp->rng) > 0.5 && s->cash >= row->close * 5) {
+                            order_type = 1; 
+                            order_quantity = 5;
+                        } else if (s->current_holdings > 0) {
+                            order_type = -1; 
+                            order_quantity = 5;
+                        }
+                    }
+                }
 
-                // --- INSTANT EXECUTION ---
                 if (order_type != 0 && order_quantity > 0) {
-                    
-                    // SAVE EXACT TRADE TO MESSAGE SO REVERSE HANDLER CAN UNDO IT
                     in_msg->order_type = order_type;
                     in_msg->quantity = order_quantity;
                     
-                    // 1. Trader updates their own portfolio instantly
-                    if (order_type == 1) { // Buy
+                    if (order_type == 1) { 
                         s->cash -= (row->close * order_quantity);
                         s->current_holdings += order_quantity;
-                    } else if (order_type == -1) { // Sell
+                    } else if (order_type == -1) { 
                         s->cash += (row->close * order_quantity);
                         s->current_holdings -= order_quantity;
                     }
 
-                    // 2. Send receipt to Exchange (GID 0)
                     tw_event *order_event = tw_event_new(0, 1, lp); 
                     message *order_msg = tw_event_data(order_event);
                     order_msg->type = PLACE_ORDER;
@@ -192,7 +197,6 @@ void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
                     tw_event_send(order_event);
                 }
 
-                // Schedule next day
                 tw_event *e = tw_event_new(self, 24, lp);
                 message *msg = tw_event_data(e);
                 msg->type = MARKET_UPDATE;
@@ -210,7 +214,6 @@ void model_event_reverse (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
     int self = lp->gid;
     int day = in_msg->day;
     
-    // Regenerate the row to reverse the math exactly
     csv_row *row = NULL;
     csv_row dummy_row = {day, 100.0, 105.0, 95.0, 102.0, 100000.0, 100.0, 98.0, 45.0, 1.2, 0.5, 110.0, 90.0};
     
@@ -221,9 +224,6 @@ void model_event_reverse (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
     }
 
     if (self == 0) {
-        // ==========================================
-        //         EXCHANGE REVERSALS
-        // ==========================================
         switch (in_msg->type) {
             case MARKET_OPEN: {
                 s->current_day = day - 1; 
@@ -247,30 +247,25 @@ void model_event_reverse (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
                 break;
             }
             default:
-                printf("Exchange unhandled reverse msg type %d\n", in_msg->type);
+                break;
         }
     } 
     else {
-        // ==========================================
-        //         TRADER REVERSALS
-        // ==========================================
         switch (in_msg->type) {
             case MARKET_UPDATE: {
                 s->current_day = day - 1;
-                
-                // If a trade was executed and saved in the message scratchpad, undo it perfectly
-                if (in_msg->order_type == 1) { // Undo Buy
+                if (in_msg->order_type == 1) { 
                     s->cash += (row->close * in_msg->quantity);
                     s->current_holdings -= in_msg->quantity;
                 } 
-                else if (in_msg->order_type == -1) { // Undo Sell
+                else if (in_msg->order_type == -1) { 
                     s->cash -= (row->close * in_msg->quantity);
                     s->current_holdings += in_msg->quantity;
                 }
                 break;
             }
             default:
-                printf("Trader unhandled reverse msg type %d\n", in_msg->type);
+                break;
         }
     }
 }
@@ -279,7 +274,15 @@ void model_final (state *s, tw_lp *lp) {
     if (lp->gid == 0) {
         printf("EXCHANGE (GID 0) finished Day %d with %f total volume processed.\n", s->current_day, s->accumulated_volume);
     } else {
-        // Uncomment to print trader end states (can be noisy if you have thousands of traders)
-        // printf("TRADER (GID %d) finished Day %d. Cash: $%.2f | Holdings: %d shares.\n", (int)lp->gid, s->current_day, s->cash, s->current_holdings);
+        double final_portfolio_value = s->cash + (s->current_holdings * s->current_close);
+        double profit = final_portfolio_value - 100000.0; 
+        
+        char* strategy_name = "Unknown";
+        if (s->strategy_id == 1) strategy_name = "Mean Reversion";
+        if (s->strategy_id == 2) strategy_name = "Trend Follower";
+        if (s->strategy_id == 3) strategy_name = "Noise Trader  ";
+
+        printf("TRADER %4d | Strategy: %s | Final Value: $%9.2f | Profit: $%9.2f\n", 
+               (int)lp->gid, strategy_name, final_portfolio_value, profit);
     }
 }
