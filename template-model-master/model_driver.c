@@ -39,15 +39,12 @@ void model_init (state *s, tw_lp *lp) {
         tw_event_send(e);
     } else {
         // --- TRADER ---
-        s->cash = 100000.0;         
+        s->cash = g_starting_cash;         
         s->current_holdings = 0;    
         
-        // Assign strategy based on command line argument
         if (g_strategy_id == 0) {
-            // Randomly assign 1, 2, or 3
             s->strategy_id = tw_rand_integer(lp->rng, 1, 3);
         } else {
-            // Force the specific strategy
             s->strategy_id = g_strategy_id;
         }
         
@@ -129,7 +126,7 @@ void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
                 break;
             }
             default:
-                printf("Exchange unhandled forward msg type %d\n", in_msg->type);
+                break;
         }
     } 
     else {
@@ -145,19 +142,19 @@ void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
                 
                 // Strategy 1: Mean Reversion
                 if (s->strategy_id == 1) { 
-                    if (row->rsi_14 < 30.0 && s->cash >= row->close * 10) {
+                    if (row->rsi_14 < g_rsi_oversold && s->cash >= row->close * g_order_size) {
                         order_type = 1; 
-                        order_quantity = 10;
-                    } else if (row->rsi_14 > 70.0 && s->current_holdings > 0) {
+                        order_quantity = g_order_size;
+                    } else if (row->rsi_14 > g_rsi_overbought && s->current_holdings > 0) {
                         order_type = -1; 
                         order_quantity = s->current_holdings; 
                     }
                 } 
                 // Strategy 2: Trend Follower
                 else if (s->strategy_id == 2) {
-                    if (row->macd > row->macd_signal && s->cash >= row->close * 10) {
+                    if (row->macd > row->macd_signal && s->cash >= row->close * g_order_size) {
                         order_type = 1; 
-                        order_quantity = 10;
+                        order_quantity = g_order_size;
                     } else if (row->macd < row->macd_signal && s->current_holdings > 0) {
                         order_type = -1; 
                         order_quantity = s->current_holdings;
@@ -165,13 +162,13 @@ void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
                 }
                 // Strategy 3: Noise Trader
                 else if (s->strategy_id == 3) {
-                    if (tw_rand_unif(lp->rng) < 0.05) { 
-                        if (tw_rand_unif(lp->rng) > 0.5 && s->cash >= row->close * 5) {
+                    if (tw_rand_unif(lp->rng) < g_noise_prob) { 
+                        if (tw_rand_unif(lp->rng) > 0.5 && s->cash >= row->close * g_order_size) {
                             order_type = 1; 
-                            order_quantity = 5;
+                            order_quantity = g_order_size;
                         } else if (s->current_holdings > 0) {
                             order_type = -1; 
-                            order_quantity = 5;
+                            order_quantity = g_order_size; // Or s->current_holdings to dump
                         }
                     }
                 }
@@ -205,7 +202,7 @@ void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
                 break;
             }
             default:
-                printf("Trader unhandled forward msg type %d\n", in_msg->type);
+                break;
         }
     }
 }
@@ -275,7 +272,7 @@ void model_final (state *s, tw_lp *lp) {
         printf("EXCHANGE (GID 0) finished Day %d with %f total volume processed.\n", s->current_day, s->accumulated_volume);
     } else {
         double final_portfolio_value = s->cash + (s->current_holdings * s->current_close);
-        double profit = final_portfolio_value - 100000.0; 
+        double profit = final_portfolio_value - g_starting_cash; 
         
         char* strategy_name = "Unknown";
         if (s->strategy_id == 1) strategy_name = "Mean Reversion";

@@ -1,10 +1,3 @@
-//The header file template for a ROSS model
-//This file includes:
-// - the state and message structs
-// - extern'ed command line arguments
-// - custom mapping function prototypes (if needed)
-// - any other needed structs, enums, unions, or #defines
-
 #ifndef _model_h
 #define _model_h
 
@@ -77,16 +70,24 @@ typedef struct {
   int cur_ticks;
   double sector_id;           
   double volatility;    
-  double cash;             // Trader's bankroll
-  int current_holdings;    // Shares owned
-  int strategy_id;         // Which archetype they are
+  double cash;             
+  int current_holdings;    
+  int strategy_id;         
 } state; 
 
 // --- Globals ---
 extern stock_data *g_stocks;
 extern int g_num_stocks;
 extern tw_lptype model_lps[];
-extern int g_strategy_id;  // Command line argument global
+
+// Command Line Argument Globals
+extern int g_strategy_id;  
+extern int g_num_lps_per_pe;
+extern double g_starting_cash;
+extern double g_rsi_oversold;
+extern double g_rsi_overbought;
+extern int g_order_size;
+extern double g_noise_prob;
 
 // --- Function Declarations ---
 extern void model_init(state *s, tw_lp *lp);
@@ -95,7 +96,6 @@ extern void model_event_reverse(state *s, tw_bf *bf, message *in_msg, tw_lp *lp)
 extern void model_final(state *s, tw_lp *lp);
 extern tw_peid model_map(tw_lpid gid);
 
-// Simplified CSV load signature
 void csv_load(const char* path); 
 
 #endif

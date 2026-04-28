@@ -8,8 +8,14 @@
 #include "ross.h"
 #include "model.h"
 
-// Define the global command line variable
+// Define the global command line variables with default fallbacks
 int g_strategy_id = 0; 
+int g_num_lps_per_pe = 10;
+double g_starting_cash = 100000.0;
+double g_rsi_oversold = 30.0;
+double g_rsi_overbought = 70.0;
+int g_order_size = 10;
+double g_noise_prob = 0.05;
 
 tw_lptype model_lps[] = {
   {
@@ -25,18 +31,22 @@ tw_lptype model_lps[] = {
   { 0 },
 };
 
-// Expose the argument to the command line
+// Expose the arguments to the command line
 const tw_optdef model_opts[] = {
-	TWOPT_GROUP("ROSS Model Options"),
+	TWOPT_GROUP("ROSS Agent Options"),
 	TWOPT_UINT("strategy", g_strategy_id, "Force a specific strategy (0=Random, 1=MeanRev, 2=Trend, 3=Noise)"),
+	TWOPT_UINT("lps", g_num_lps_per_pe, "Number of LPs per PE (1 Exchange + N Traders)"),
+	TWOPT_DOUBLE("cash", g_starting_cash, "Starting cash for each trader"),
+	TWOPT_DOUBLE("rsi-low", g_rsi_oversold, "RSI Oversold threshold (Mean Reversion)"),
+	TWOPT_DOUBLE("rsi-high", g_rsi_overbought, "RSI Overbought threshold (Mean Reversion)"),
+	TWOPT_UINT("order-size", g_order_size, "Base number of shares to buy/sell"),
+	TWOPT_DOUBLE("noise-prob", g_noise_prob, "Daily probability of a noise trader acting (0.0 to 1.0)"),
 	TWOPT_END(),
 };
 
 #define model_main main
 
 int model_main (int argc, char* argv[]) {
-	int num_lps_per_pe;
-
 	tw_opt_add(model_opts);
 	tw_init(&argc, &argv);
 
@@ -44,9 +54,8 @@ int model_main (int argc, char* argv[]) {
 	    csv_load("SP500.csv");
 	}
 
-	// Set up LPs within ROSS (1 Exchange + 9 Traders per core for testing)
-	num_lps_per_pe = 10; 
-	tw_define_lps(num_lps_per_pe, sizeof(message));
+	// Set up LPs within ROSS using the command line argument
+	tw_define_lps(g_num_lps_per_pe, sizeof(message));
 	
 	g_tw_lp_types = model_lps;
 	tw_lp_setup_types();
