@@ -34,7 +34,7 @@ tw_lptype model_lps[] = {
 // Expose the arguments to the command line
 const tw_optdef model_opts[] = {
 	TWOPT_GROUP("ROSS Agent Options"),
-	TWOPT_UINT("strategy", g_strategy_id, "Force a specific strategy (0=Random, 1=MeanRev, 2=Trend, 3=Noise)"),
+	TWOPT_UINT("strategy", g_strategy_id, "Force a specific strategy (0=MeanRev, 1=Trend, 2=Noise)"),
 	TWOPT_UINT("lps", g_num_lps_per_pe, "Number of LPs per PE (1 Exchange + N Traders)"),
 	TWOPT_DOUBLE("cash", g_starting_cash, "Starting cash for each trader"),
 	TWOPT_DOUBLE("rsi-low", g_rsi_oversold, "RSI Oversold threshold (Mean Reversion)"),
