@@ -16,6 +16,8 @@
 stock_data *g_stocks = NULL;
 int g_num_stocks = 0;
 
+static uint64_t g_computation_cycles = 0;
+
 void model_init (state *s, tw_lp *lp) {
     int self = lp->gid;
     
@@ -58,6 +60,8 @@ void model_init (state *s, tw_lp *lp) {
 }
 
 void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
+    uint64_t start_comp = clock_now();
+    
     int self = lp->gid;
     *(int *) bf = (int) 0; 
     in_msg->previous_close = s->current_close;
@@ -213,6 +217,9 @@ void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
                 break;
         }
     }
+    
+    uint64_t end_comp = clock_now();
+    g_computation_cycles += (end_comp - start_comp);
 }
 
 void model_event_reverse (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {

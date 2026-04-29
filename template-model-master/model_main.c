@@ -60,7 +60,20 @@ int model_main (int argc, char* argv[]) {
 	g_tw_lp_types = model_lps;
 	tw_lp_setup_types();
 
+	uint64_t start_total = clock_now();
 	tw_run();
+	uint64_t end_total = clock_now();
+	uint64_t total_cycles = end_total - start_total;
+
+	uint64_t comm_overhead_cycles = total_cycles - g_computation_cycles;
+
+	printf("PE %d: Total cycles: %llu, Computation cycles: %llu, Communication overhead cycles: %llu\n",
+	       g_tw_mynode, total_cycles, g_computation_cycles, comm_overhead_cycles);
+
+	if (g_tw_mynode == 0) {
+	    printf("Total simulation time: %.6f seconds\n", (double)total_cycles / 512000000.0);
+	}
+
 	tw_end();
 
 	return 0;

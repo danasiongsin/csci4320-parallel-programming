@@ -89,6 +89,9 @@ extern double g_rsi_overbought;
 extern int g_order_size;
 extern double g_noise_prob;
 
+// Performance measurement globals
+extern uint64_t g_computation_cycles;
+
 // --- Function Declarations ---
 extern void model_init(state *s, tw_lp *lp);
 extern void model_event(state *s, tw_bf *bf, message *in_msg, tw_lp *lp);
@@ -96,6 +99,22 @@ extern void model_event_reverse(state *s, tw_bf *bf, message *in_msg, tw_lp *lp)
 extern void model_final(state *s, tw_lp *lp);
 extern tw_peid model_map(tw_lpid gid);
 
-void csv_load(const char* path); 
+void csv_load(const char* path);
+
+// ONLY WORKS ON POWER9/AiMOS
+#ifndef CLOCKCYCLE_H
+#define CLOCKCYCLE_H
+#include <stdint.h>
+uint64_t clock_now(void)
+{
+unsigned int tbl, tbu0, tbu1;
+do {
+__asm__ __volatile__ ("mftbu %0" : "=r"(tbu0));
+__asm__ __volatile__ ("mftb %0" : "=r"(tbl));
+__asm__ __volatile__ ("mftbu %0" : "=r"(tbu1));
+} while (tbu0 != tbu1);
+return (((uint64_t)tbu0) << 32) | tbl;
+}
+#endif // CLOCKCYCLE_H
 
 #endif
