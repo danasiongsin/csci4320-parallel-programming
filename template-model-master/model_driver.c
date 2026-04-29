@@ -113,11 +113,14 @@ void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
             }
             case MARKET_CLOSE: {
                 s->current_close = row->close;
-                tw_event *e = tw_event_new(self, 12, lp); 
-                message *msg = tw_event_data(e);
-                msg->type = MARKET_OPEN;
-                msg->day = day + 1;
-                tw_event_send(e);
+                int last_day = (g_stocks != NULL && g_stocks[0].count > 0) ? (int)g_stocks[0].count - 1 : 0;
+                if (day < last_day) {
+                    tw_event *e = tw_event_new(self, 12, lp); 
+                    message *msg = tw_event_data(e);
+                    msg->type = MARKET_OPEN;
+                    msg->day = day + 1;
+                    tw_event_send(e);
+                }
                 break;
             }
             case PLACE_ORDER: {
@@ -194,11 +197,16 @@ void model_event (state *s, tw_bf *bf, message *in_msg, tw_lp *lp) {
                     tw_event_send(order_event);
                 }
 
-                tw_event *e = tw_event_new(self, 24, lp);
-                message *msg = tw_event_data(e);
-                msg->type = MARKET_UPDATE;
-                msg->day = day + 1;
-                tw_event_send(e);
+                {
+                    int last_day = (g_stocks != NULL && g_stocks[0].count > 0) ? (int)g_stocks[0].count - 1 : 0;
+                    if (day < last_day) {
+                        tw_event *e = tw_event_new(self, 24, lp);
+                        message *msg = tw_event_data(e);
+                        msg->type = MARKET_UPDATE;
+                        msg->day = day + 1;
+                        tw_event_send(e);
+                    }
+                }
                 break;
             }
             default:

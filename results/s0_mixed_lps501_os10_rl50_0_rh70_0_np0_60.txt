@@ -1,0 +1,793 @@
+./models/model --synch=1 --strategy=0 --lps=501 --order-size=10 --rsi-low=50.0 --rsi-high=70.0 --noise-prob=0.60 
+
+Wed Apr 29 15:37:44 2026
+
+ROSS Version: v8.1.1-dirty
+
+tw_net_start: Found world size to be 1 
+Successfully loaded 11615 rows of historical market data.
+
+ROSS Core Configuration: 
+	Total PEs                                                    1
+	Total KPs                                          [Nodes (1) x KPs (16)] 16
+	Total LPs                                                  501
+	Simulation End Time                                  100000.00
+	LP-to-PE Mapping                                        linear
+
+
+ROSS Event Memory Allocation:
+	Model events                                              2049
+	Network events                                              16
+	Total events                                              2064
+
+*** START SEQUENTIAL SIMULATION ***
+
+GVT #0: simulation 1% complete, max event queue size 915 (GVT = 1008.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 2% complete, max event queue size 920 (GVT = 2001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 3% complete, max event queue size 922 (GVT = 3001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 4% complete, max event queue size 922 (GVT = 4009.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 5% complete, max event queue size 922 (GVT = 5001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 6% complete, max event queue size 922 (GVT = 6001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 7% complete, max event queue size 922 (GVT = 7009.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 8% complete, max event queue size 922 (GVT = 8001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 9% complete, max event queue size 922 (GVT = 9001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 10% complete, max event queue size 922 (GVT = 10000.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 11% complete, max event queue size 922 (GVT = 11002.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 12% complete, max event queue size 922 (GVT = 12001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 13% complete, max event queue size 922 (GVT = 13000.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 14% complete, max event queue size 922 (GVT = 14004.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 15% complete, max event queue size 922 (GVT = 15001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 16% complete, max event queue size 922 (GVT = 16001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 17% complete, max event queue size 922 (GVT = 17006.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 18% complete, max event queue size 922 (GVT = 18001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 19% complete, max event queue size 922 (GVT = 19001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 20% complete, max event queue size 922 (GVT = 20008.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 21% complete, max event queue size 922 (GVT = 21001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 22% complete, max event queue size 922 (GVT = 22003.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 23% complete, max event queue size 922 (GVT = 23010.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 24% complete, max event queue size 922 (GVT = 24001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 25% complete, max event queue size 922 (GVT = 25005.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 26% complete, max event queue size 922 (GVT = 26012.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 27% complete, max event queue size 922 (GVT = 27001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 28% complete, max event queue size 922 (GVT = 28007.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 29% complete, max event queue size 922 (GVT = 29001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 30% complete, max event queue size 922 (GVT = 30001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 31% complete, max event queue size 922 (GVT = 31009.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 32% complete, max event queue size 922 (GVT = 32001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 33% complete, max event queue size 922 (GVT = 33001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 34% complete, max event queue size 922 (GVT = 34009.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 35% complete, max event queue size 922 (GVT = 35001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 36% complete, max event queue size 922 (GVT = 36001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 37% complete, max event queue size 922 (GVT = 37001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 38% complete, max event queue size 922 (GVT = 38001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 39% complete, max event queue size 922 (GVT = 39001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 40% complete, max event queue size 922 (GVT = 40001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 41% complete, max event queue size 922 (GVT = 41003.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 42% complete, max event queue size 922 (GVT = 42001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 43% complete, max event queue size 922 (GVT = 43001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 44% complete, max event queue size 922 (GVT = 44005.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 45% complete, max event queue size 922 (GVT = 45001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 46% complete, max event queue size 922 (GVT = 46001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 47% complete, max event queue size 922 (GVT = 47007.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 48% complete, max event queue size 922 (GVT = 48001.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 49% complete, max event queue size 922 (GVT = 49002.0000) at Wed Apr 29 15:37:44 2026.
+AVL tree size: 0
+GVT #0: simulation 50% complete, max event queue size 922 (GVT = 50009.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 51% complete, max event queue size 922 (GVT = 51001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 52% complete, max event queue size 922 (GVT = 52004.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 53% complete, max event queue size 922 (GVT = 53011.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 54% complete, max event queue size 922 (GVT = 54001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 55% complete, max event queue size 922 (GVT = 55006.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 56% complete, max event queue size 922 (GVT = 56001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 57% complete, max event queue size 922 (GVT = 57001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 58% complete, max event queue size 922 (GVT = 58008.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 59% complete, max event queue size 922 (GVT = 59001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 60% complete, max event queue size 922 (GVT = 60001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 61% complete, max event queue size 922 (GVT = 61009.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 62% complete, max event queue size 922 (GVT = 62001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 63% complete, max event queue size 922 (GVT = 63001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 64% complete, max event queue size 922 (GVT = 64009.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 65% complete, max event queue size 922 (GVT = 65001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 66% complete, max event queue size 922 (GVT = 66001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 67% complete, max event queue size 922 (GVT = 67001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 68% complete, max event queue size 922 (GVT = 68002.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 69% complete, max event queue size 922 (GVT = 69001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 70% complete, max event queue size 922 (GVT = 70001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 71% complete, max event queue size 922 (GVT = 71004.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 72% complete, max event queue size 922 (GVT = 72001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 73% complete, max event queue size 922 (GVT = 73001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 74% complete, max event queue size 922 (GVT = 74006.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 75% complete, max event queue size 922 (GVT = 75001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 76% complete, max event queue size 922 (GVT = 76001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 77% complete, max event queue size 922 (GVT = 77008.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 78% complete, max event queue size 922 (GVT = 78001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 79% complete, max event queue size 922 (GVT = 79003.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 80% complete, max event queue size 922 (GVT = 80010.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 81% complete, max event queue size 922 (GVT = 81001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 82% complete, max event queue size 922 (GVT = 82005.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 83% complete, max event queue size 922 (GVT = 83012.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 84% complete, max event queue size 922 (GVT = 84001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 85% complete, max event queue size 922 (GVT = 85007.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 86% complete, max event queue size 922 (GVT = 86001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 87% complete, max event queue size 922 (GVT = 87001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 88% complete, max event queue size 922 (GVT = 88009.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 89% complete, max event queue size 922 (GVT = 89001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 90% complete, max event queue size 922 (GVT = 90001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 91% complete, max event queue size 922 (GVT = 91009.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 92% complete, max event queue size 922 (GVT = 92001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 93% complete, max event queue size 922 (GVT = 93001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 94% complete, max event queue size 922 (GVT = 94001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 95% complete, max event queue size 922 (GVT = 95001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 96% complete, max event queue size 922 (GVT = 96001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 97% complete, max event queue size 922 (GVT = 97001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 98% complete, max event queue size 922 (GVT = 98003.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+GVT #0: simulation 99% complete, max event queue size 922 (GVT = 99001.0000) at Wed Apr 29 15:37:45 2026.
+AVL tree size: 0
+*** END SIMULATION ***
+
+EXCHANGE (GID 0) finished Day 5263 with 217300000.000000 total volume processed.
+TRADER    1 | Strategy: Noise Trader   | Final Value: $105530.00 | Profit: $  5530.00
+TRADER    2 | Strategy: Noise Trader   | Final Value: $106286.30 | Profit: $  6286.30
+TRADER    3 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER    4 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER    5 | Strategy: Noise Trader   | Final Value: $102996.60 | Profit: $  2996.60
+TRADER    6 | Strategy: Noise Trader   | Final Value: $106972.30 | Profit: $  6972.30
+TRADER    7 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER    8 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER    9 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   10 | Strategy: Noise Trader   | Final Value: $104717.90 | Profit: $  4717.90
+TRADER   11 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   12 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   13 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   14 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   15 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   16 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   17 | Strategy: Noise Trader   | Final Value: $104410.90 | Profit: $  4410.90
+TRADER   18 | Strategy: Noise Trader   | Final Value: $105595.90 | Profit: $  5595.90
+TRADER   19 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   20 | Strategy: Noise Trader   | Final Value: $106213.30 | Profit: $  6213.30
+TRADER   21 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   22 | Strategy: Noise Trader   | Final Value: $106014.30 | Profit: $  6014.30
+TRADER   23 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   24 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   25 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   26 | Strategy: Noise Trader   | Final Value: $105323.30 | Profit: $  5323.30
+TRADER   27 | Strategy: Noise Trader   | Final Value: $106471.60 | Profit: $  6471.60
+TRADER   28 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   29 | Strategy: Noise Trader   | Final Value: $108985.00 | Profit: $  8985.00
+TRADER   30 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   31 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   32 | Strategy: Noise Trader   | Final Value: $104435.30 | Profit: $  4435.30
+TRADER   33 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   34 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   35 | Strategy: Noise Trader   | Final Value: $109407.20 | Profit: $  9407.20
+TRADER   36 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   37 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   38 | Strategy: Noise Trader   | Final Value: $104748.10 | Profit: $  4748.10
+TRADER   39 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   40 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   41 | Strategy: Noise Trader   | Final Value: $107544.10 | Profit: $  7544.10
+TRADER   42 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   43 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   44 | Strategy: Noise Trader   | Final Value: $107724.50 | Profit: $  7724.50
+TRADER   45 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   46 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   47 | Strategy: Noise Trader   | Final Value: $106727.50 | Profit: $  6727.50
+TRADER   48 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   49 | Strategy: Noise Trader   | Final Value: $109040.90 | Profit: $  9040.90
+TRADER   50 | Strategy: Noise Trader   | Final Value: $102942.40 | Profit: $  2942.40
+TRADER   51 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   52 | Strategy: Noise Trader   | Final Value: $104609.20 | Profit: $  4609.20
+TRADER   53 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   54 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   55 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   56 | Strategy: Noise Trader   | Final Value: $107586.90 | Profit: $  7586.90
+TRADER   57 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   58 | Strategy: Noise Trader   | Final Value: $108438.40 | Profit: $  8438.40
+TRADER   59 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   60 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   61 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   62 | Strategy: Noise Trader   | Final Value: $107287.60 | Profit: $  7287.60
+TRADER   63 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   64 | Strategy: Noise Trader   | Final Value: $103764.10 | Profit: $  3764.10
+TRADER   65 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   66 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   67 | Strategy: Noise Trader   | Final Value: $104056.10 | Profit: $  4056.10
+TRADER   68 | Strategy: Noise Trader   | Final Value: $104525.90 | Profit: $  4525.90
+TRADER   69 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   70 | Strategy: Noise Trader   | Final Value: $101673.00 | Profit: $  1673.00
+TRADER   71 | Strategy: Noise Trader   | Final Value: $102725.10 | Profit: $  2725.10
+TRADER   72 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   73 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   74 | Strategy: Noise Trader   | Final Value: $101092.20 | Profit: $  1092.20
+TRADER   75 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   76 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   77 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   78 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   79 | Strategy: Noise Trader   | Final Value: $106487.30 | Profit: $  6487.30
+TRADER   80 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   81 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   82 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   83 | Strategy: Noise Trader   | Final Value: $110224.00 | Profit: $ 10224.00
+TRADER   84 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   85 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   86 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   87 | Strategy: Noise Trader   | Final Value: $109424.70 | Profit: $  9424.70
+TRADER   88 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   89 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   90 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   91 | Strategy: Noise Trader   | Final Value: $108035.60 | Profit: $  8035.60
+TRADER   92 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   93 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   94 | Strategy: Noise Trader   | Final Value: $106937.00 | Profit: $  6937.00
+TRADER   95 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER   96 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER   97 | Strategy: Noise Trader   | Final Value: $104869.70 | Profit: $  4869.70
+TRADER   98 | Strategy: Noise Trader   | Final Value: $106248.60 | Profit: $  6248.60
+TRADER   99 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  100 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  101 | Strategy: Noise Trader   | Final Value: $ 99607.10 | Profit: $  -392.90
+TRADER  102 | Strategy: Noise Trader   | Final Value: $100692.90 | Profit: $   692.90
+TRADER  103 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  104 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  105 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  106 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  107 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  108 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  109 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  110 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  111 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  112 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  113 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  114 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  115 | Strategy: Noise Trader   | Final Value: $109362.70 | Profit: $  9362.70
+TRADER  116 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  117 | Strategy: Noise Trader   | Final Value: $105122.40 | Profit: $  5122.40
+TRADER  118 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  119 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  120 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  121 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  122 | Strategy: Noise Trader   | Final Value: $107231.80 | Profit: $  7231.80
+TRADER  123 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  124 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  125 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  126 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  127 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  128 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  129 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  130 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  131 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  132 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  133 | Strategy: Noise Trader   | Final Value: $104724.10 | Profit: $  4724.10
+TRADER  134 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  135 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  136 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  137 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  138 | Strategy: Noise Trader   | Final Value: $103217.70 | Profit: $  3217.70
+TRADER  139 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  140 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  141 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  142 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  143 | Strategy: Noise Trader   | Final Value: $103265.50 | Profit: $  3265.50
+TRADER  144 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  145 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  146 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  147 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  148 | Strategy: Noise Trader   | Final Value: $104403.40 | Profit: $  4403.40
+TRADER  149 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  150 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  151 | Strategy: Noise Trader   | Final Value: $106555.20 | Profit: $  6555.20
+TRADER  152 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  153 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  154 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  155 | Strategy: Noise Trader   | Final Value: $109771.50 | Profit: $  9771.50
+TRADER  156 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  157 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  158 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  159 | Strategy: Noise Trader   | Final Value: $106613.70 | Profit: $  6613.70
+TRADER  160 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  161 | Strategy: Noise Trader   | Final Value: $107743.00 | Profit: $  7743.00
+TRADER  162 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  163 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  164 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  165 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  166 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  167 | Strategy: Noise Trader   | Final Value: $102959.50 | Profit: $  2959.50
+TRADER  168 | Strategy: Noise Trader   | Final Value: $108611.80 | Profit: $  8611.80
+TRADER  169 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  170 | Strategy: Noise Trader   | Final Value: $107690.90 | Profit: $  7690.90
+TRADER  171 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  172 | Strategy: Noise Trader   | Final Value: $104037.10 | Profit: $  4037.10
+TRADER  173 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  174 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  175 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  176 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  177 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  178 | Strategy: Noise Trader   | Final Value: $105604.50 | Profit: $  5604.50
+TRADER  179 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  180 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  181 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  182 | Strategy: Noise Trader   | Final Value: $104213.20 | Profit: $  4213.20
+TRADER  183 | Strategy: Noise Trader   | Final Value: $100015.50 | Profit: $    15.50
+TRADER  184 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  185 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  186 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  187 | Strategy: Noise Trader   | Final Value: $103231.50 | Profit: $  3231.50
+TRADER  188 | Strategy: Noise Trader   | Final Value: $106478.10 | Profit: $  6478.10
+TRADER  189 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  190 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  191 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  192 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  193 | Strategy: Noise Trader   | Final Value: $100825.80 | Profit: $   825.80
+TRADER  194 | Strategy: Noise Trader   | Final Value: $104655.60 | Profit: $  4655.60
+TRADER  195 | Strategy: Noise Trader   | Final Value: $101696.20 | Profit: $  1696.20
+TRADER  196 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  197 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  198 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  199 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  200 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  201 | Strategy: Noise Trader   | Final Value: $105385.90 | Profit: $  5385.90
+TRADER  202 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  203 | Strategy: Noise Trader   | Final Value: $106644.20 | Profit: $  6644.20
+TRADER  204 | Strategy: Noise Trader   | Final Value: $107264.60 | Profit: $  7264.60
+TRADER  205 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  206 | Strategy: Noise Trader   | Final Value: $105430.60 | Profit: $  5430.60
+TRADER  207 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  208 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  209 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  210 | Strategy: Noise Trader   | Final Value: $105301.80 | Profit: $  5301.80
+TRADER  211 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  212 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  213 | Strategy: Noise Trader   | Final Value: $105417.50 | Profit: $  5417.50
+TRADER  214 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  215 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  216 | Strategy: Noise Trader   | Final Value: $107915.70 | Profit: $  7915.70
+TRADER  217 | Strategy: Noise Trader   | Final Value: $102670.20 | Profit: $  2670.20
+TRADER  218 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  219 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  220 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  221 | Strategy: Noise Trader   | Final Value: $103770.80 | Profit: $  3770.80
+TRADER  222 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  223 | Strategy: Noise Trader   | Final Value: $104848.10 | Profit: $  4848.10
+TRADER  224 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  225 | Strategy: Noise Trader   | Final Value: $105133.80 | Profit: $  5133.80
+TRADER  226 | Strategy: Noise Trader   | Final Value: $106787.20 | Profit: $  6787.20
+TRADER  227 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  228 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  229 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  230 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  231 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  232 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  233 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  234 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  235 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  236 | Strategy: Noise Trader   | Final Value: $107008.00 | Profit: $  7008.00
+TRADER  237 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  238 | Strategy: Noise Trader   | Final Value: $103565.70 | Profit: $  3565.70
+TRADER  239 | Strategy: Noise Trader   | Final Value: $102928.10 | Profit: $  2928.10
+TRADER  240 | Strategy: Noise Trader   | Final Value: $107995.00 | Profit: $  7995.00
+TRADER  241 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  242 | Strategy: Noise Trader   | Final Value: $106843.80 | Profit: $  6843.80
+TRADER  243 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  244 | Strategy: Noise Trader   | Final Value: $107105.00 | Profit: $  7105.00
+TRADER  245 | Strategy: Noise Trader   | Final Value: $ 99842.30 | Profit: $  -157.70
+TRADER  246 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  247 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  248 | Strategy: Noise Trader   | Final Value: $106724.60 | Profit: $  6724.60
+TRADER  249 | Strategy: Noise Trader   | Final Value: $100147.10 | Profit: $   147.10
+TRADER  250 | Strategy: Noise Trader   | Final Value: $101515.70 | Profit: $  1515.70
+TRADER  251 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  252 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  253 | Strategy: Noise Trader   | Final Value: $104055.40 | Profit: $  4055.40
+TRADER  254 | Strategy: Noise Trader   | Final Value: $102352.20 | Profit: $  2352.20
+TRADER  255 | Strategy: Noise Trader   | Final Value: $108986.30 | Profit: $  8986.30
+TRADER  256 | Strategy: Noise Trader   | Final Value: $102992.30 | Profit: $  2992.30
+TRADER  257 | Strategy: Noise Trader   | Final Value: $106446.60 | Profit: $  6446.60
+TRADER  258 | Strategy: Noise Trader   | Final Value: $105937.60 | Profit: $  5937.60
+TRADER  259 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  260 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  261 | Strategy: Noise Trader   | Final Value: $102956.30 | Profit: $  2956.30
+TRADER  262 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  263 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  264 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  265 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  266 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  267 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  268 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  269 | Strategy: Noise Trader   | Final Value: $106098.80 | Profit: $  6098.80
+TRADER  270 | Strategy: Noise Trader   | Final Value: $105389.20 | Profit: $  5389.20
+TRADER  271 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  272 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  273 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  274 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  275 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  276 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  277 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  278 | Strategy: Noise Trader   | Final Value: $105600.30 | Profit: $  5600.30
+TRADER  279 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  280 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  281 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  282 | Strategy: Noise Trader   | Final Value: $107572.10 | Profit: $  7572.10
+TRADER  283 | Strategy: Noise Trader   | Final Value: $104779.70 | Profit: $  4779.70
+TRADER  284 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  285 | Strategy: Noise Trader   | Final Value: $103633.30 | Profit: $  3633.30
+TRADER  286 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  287 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  288 | Strategy: Noise Trader   | Final Value: $105915.60 | Profit: $  5915.60
+TRADER  289 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  290 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  291 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  292 | Strategy: Noise Trader   | Final Value: $106798.00 | Profit: $  6798.00
+TRADER  293 | Strategy: Noise Trader   | Final Value: $104121.60 | Profit: $  4121.60
+TRADER  294 | Strategy: Noise Trader   | Final Value: $106474.80 | Profit: $  6474.80
+TRADER  295 | Strategy: Noise Trader   | Final Value: $106163.30 | Profit: $  6163.30
+TRADER  296 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  297 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  298 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  299 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  300 | Strategy: Noise Trader   | Final Value: $108302.70 | Profit: $  8302.70
+TRADER  301 | Strategy: Noise Trader   | Final Value: $105120.40 | Profit: $  5120.40
+TRADER  302 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  303 | Strategy: Noise Trader   | Final Value: $101019.70 | Profit: $  1019.70
+TRADER  304 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  305 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  306 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  307 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  308 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  309 | Strategy: Noise Trader   | Final Value: $105330.10 | Profit: $  5330.10
+TRADER  310 | Strategy: Noise Trader   | Final Value: $105750.80 | Profit: $  5750.80
+TRADER  311 | Strategy: Noise Trader   | Final Value: $108295.70 | Profit: $  8295.70
+TRADER  312 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  313 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  314 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  315 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  316 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  317 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  318 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  319 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  320 | Strategy: Noise Trader   | Final Value: $109119.80 | Profit: $  9119.80
+TRADER  321 | Strategy: Noise Trader   | Final Value: $107134.50 | Profit: $  7134.50
+TRADER  322 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  323 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  324 | Strategy: Noise Trader   | Final Value: $107183.70 | Profit: $  7183.70
+TRADER  325 | Strategy: Noise Trader   | Final Value: $101767.30 | Profit: $  1767.30
+TRADER  326 | Strategy: Noise Trader   | Final Value: $102062.70 | Profit: $  2062.70
+TRADER  327 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  328 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  329 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  330 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  331 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  332 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  333 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  334 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  335 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  336 | Strategy: Noise Trader   | Final Value: $104722.30 | Profit: $  4722.30
+TRADER  337 | Strategy: Noise Trader   | Final Value: $107193.50 | Profit: $  7193.50
+TRADER  338 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  339 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  340 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  341 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  342 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  343 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  344 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  345 | Strategy: Noise Trader   | Final Value: $107544.40 | Profit: $  7544.40
+TRADER  346 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  347 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  348 | Strategy: Noise Trader   | Final Value: $105449.30 | Profit: $  5449.30
+TRADER  349 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  350 | Strategy: Noise Trader   | Final Value: $107305.90 | Profit: $  7305.90
+TRADER  351 | Strategy: Noise Trader   | Final Value: $104554.00 | Profit: $  4554.00
+TRADER  352 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  353 | Strategy: Noise Trader   | Final Value: $107458.80 | Profit: $  7458.80
+TRADER  354 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  355 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  356 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  357 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  358 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  359 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  360 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  361 | Strategy: Noise Trader   | Final Value: $105783.00 | Profit: $  5783.00
+TRADER  362 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  363 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  364 | Strategy: Noise Trader   | Final Value: $104520.80 | Profit: $  4520.80
+TRADER  365 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  366 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  367 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  368 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  369 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  370 | Strategy: Noise Trader   | Final Value: $108204.90 | Profit: $  8204.90
+TRADER  371 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  372 | Strategy: Noise Trader   | Final Value: $105185.70 | Profit: $  5185.70
+TRADER  373 | Strategy: Noise Trader   | Final Value: $102690.80 | Profit: $  2690.80
+TRADER  374 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  375 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  376 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  377 | Strategy: Noise Trader   | Final Value: $109417.70 | Profit: $  9417.70
+TRADER  378 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  379 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  380 | Strategy: Noise Trader   | Final Value: $106899.60 | Profit: $  6899.60
+TRADER  381 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  382 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  383 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  384 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  385 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  386 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  387 | Strategy: Noise Trader   | Final Value: $107079.70 | Profit: $  7079.70
+TRADER  388 | Strategy: Noise Trader   | Final Value: $103459.80 | Profit: $  3459.80
+TRADER  389 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  390 | Strategy: Noise Trader   | Final Value: $106718.10 | Profit: $  6718.10
+TRADER  391 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  392 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  393 | Strategy: Noise Trader   | Final Value: $109657.30 | Profit: $  9657.30
+TRADER  394 | Strategy: Noise Trader   | Final Value: $105930.70 | Profit: $  5930.70
+TRADER  395 | Strategy: Noise Trader   | Final Value: $104202.50 | Profit: $  4202.50
+TRADER  396 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  397 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  398 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  399 | Strategy: Noise Trader   | Final Value: $104473.40 | Profit: $  4473.40
+TRADER  400 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  401 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  402 | Strategy: Noise Trader   | Final Value: $107761.30 | Profit: $  7761.30
+TRADER  403 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  404 | Strategy: Noise Trader   | Final Value: $ 99452.30 | Profit: $  -547.70
+TRADER  405 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  406 | Strategy: Noise Trader   | Final Value: $101014.90 | Profit: $  1014.90
+TRADER  407 | Strategy: Noise Trader   | Final Value: $107874.50 | Profit: $  7874.50
+TRADER  408 | Strategy: Noise Trader   | Final Value: $106834.30 | Profit: $  6834.30
+TRADER  409 | Strategy: Noise Trader   | Final Value: $107945.10 | Profit: $  7945.10
+TRADER  410 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  411 | Strategy: Noise Trader   | Final Value: $104956.50 | Profit: $  4956.50
+TRADER  412 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  413 | Strategy: Noise Trader   | Final Value: $105166.10 | Profit: $  5166.10
+TRADER  414 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  415 | Strategy: Noise Trader   | Final Value: $105050.90 | Profit: $  5050.90
+TRADER  416 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  417 | Strategy: Noise Trader   | Final Value: $105424.90 | Profit: $  5424.90
+TRADER  418 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  419 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  420 | Strategy: Noise Trader   | Final Value: $104007.10 | Profit: $  4007.10
+TRADER  421 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  422 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  423 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  424 | Strategy: Noise Trader   | Final Value: $105712.80 | Profit: $  5712.80
+TRADER  425 | Strategy: Noise Trader   | Final Value: $106799.00 | Profit: $  6799.00
+TRADER  426 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  427 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  428 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  429 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  430 | Strategy: Noise Trader   | Final Value: $101737.60 | Profit: $  1737.60
+TRADER  431 | Strategy: Noise Trader   | Final Value: $105087.80 | Profit: $  5087.80
+TRADER  432 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  433 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  434 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  435 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  436 | Strategy: Noise Trader   | Final Value: $108920.00 | Profit: $  8920.00
+TRADER  437 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  438 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  439 | Strategy: Noise Trader   | Final Value: $106110.70 | Profit: $  6110.70
+TRADER  440 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  441 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  442 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  443 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  444 | Strategy: Noise Trader   | Final Value: $105216.80 | Profit: $  5216.80
+TRADER  445 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  446 | Strategy: Noise Trader   | Final Value: $105571.40 | Profit: $  5571.40
+TRADER  447 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  448 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  449 | Strategy: Noise Trader   | Final Value: $105094.00 | Profit: $  5094.00
+TRADER  450 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  451 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  452 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  453 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  454 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  455 | Strategy: Noise Trader   | Final Value: $106690.40 | Profit: $  6690.40
+TRADER  456 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  457 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  458 | Strategy: Noise Trader   | Final Value: $103965.20 | Profit: $  3965.20
+TRADER  459 | Strategy: Noise Trader   | Final Value: $107085.20 | Profit: $  7085.20
+TRADER  460 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  461 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  462 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  463 | Strategy: Noise Trader   | Final Value: $105128.20 | Profit: $  5128.20
+TRADER  464 | Strategy: Noise Trader   | Final Value: $103495.70 | Profit: $  3495.70
+TRADER  465 | Strategy: Noise Trader   | Final Value: $105639.80 | Profit: $  5639.80
+TRADER  466 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  467 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  468 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  469 | Strategy: Noise Trader   | Final Value: $109114.80 | Profit: $  9114.80
+TRADER  470 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  471 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  472 | Strategy: Noise Trader   | Final Value: $107012.60 | Profit: $  7012.60
+TRADER  473 | Strategy: Noise Trader   | Final Value: $105140.10 | Profit: $  5140.10
+TRADER  474 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  475 | Strategy: Noise Trader   | Final Value: $102746.00 | Profit: $  2746.00
+TRADER  476 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  477 | Strategy: Noise Trader   | Final Value: $104510.20 | Profit: $  4510.20
+TRADER  478 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  479 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  480 | Strategy: Noise Trader   | Final Value: $105125.20 | Profit: $  5125.20
+TRADER  481 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  482 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  483 | Strategy: Noise Trader   | Final Value: $109529.70 | Profit: $  9529.70
+TRADER  484 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  485 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  486 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  487 | Strategy: Noise Trader   | Final Value: $110823.40 | Profit: $ 10823.40
+TRADER  488 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  489 | Strategy: Noise Trader   | Final Value: $104299.70 | Profit: $  4299.70
+TRADER  490 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  491 | Strategy: Noise Trader   | Final Value: $106582.90 | Profit: $  6582.90
+TRADER  492 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  493 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  494 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  495 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  496 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  497 | Strategy: Noise Trader   | Final Value: $106904.30 | Profit: $  6904.30
+TRADER  498 | Strategy: Mean Reversion | Final Value: $616125.50 | Profit: $516125.50
+TRADER  499 | Strategy: Trend Follower | Final Value: $153661.70 | Profit: $ 53661.70
+TRADER  500 | Strategy: Noise Trader   | Final Value: $106110.30 | Profit: $  6110.30
+
+	: Running Time = 1.3283 seconds
+
+TW Library Statistics:
+	Total Events Processed                                 2801566
+	Events Aborted (part of RBs)                                 0
+	Events Rolled Back                                           0
+	Event Ties Detected in PE Queues                             0
+	Efficiency                                              100.00 %
+	Total Remote (shared mem) Events Processed                   0
+	Percent Remote Events                                     0.00 %
+	Total Remote (network) Events Processed                      0
+	Percent Remote Events                                     0.00 %
+
+	Total Roll Backs                                             0
+	Primary Roll Backs                                           0
+	Secondary Roll Backs                                         0
+	Fossil Collect Attempts                                      0
+	Total GVT Computations                                       0
+
+	Net Events Processed                                   2801566
+	Event Rate (events/sec)                              2109125.4
+	Total Events Scheduled Past End Time                       501
+
+TW Memory Statistics:
+	Events Allocated                                          2065
+	Memory Allocated                                          1329
+	Memory Wasted                                               70
+
+TW Data Structure sizes in bytes (sizeof):
+	PE struct                                                 1328
+	KP struct                                                  320
+	LP struct                                                  320
+	LP Model struct                                            104
+	LP RNGs                                                     80
+	Total LP                                                   504
+	Event struct                                               344
+	Event struct with Model                                    440
+
+TW Clock Cycle Statistics (MAX values in secs at 0.5120 GHz):
+	Initialization                                          0.1444
+	Priority Queue (enq/deq)                                0.6285
+	AVL Tree (insert/delete)                                0.0000
+	LZ4 (de)compression                                     0.0000
+	Buddy system                                            0.0000
+	Event Processing                                        1.1025
+	Event Cancel                                            0.0000
+	Event Abort                                             0.0000
+
+	GVT                                                     0.0000
+	Fossil Collect                                          0.0000
+	Primary Rollbacks                                       0.0000
+	Network Read                                            0.0000
+	Other Network                                           0.0000
+	Instrumentation (computation)                           0.0000
+	Instrumentation (write)                                 0.0000
+	Total Time (Note: Using Running Time above for Speedup)      1.3283
+
+TW GVT Statistics: MPI AllReduce
+	GVT Interval                                                16
+	GVT Real Time Interval (cycles)                    0
+	GVT Real Time Interval (sec)                        0.00000000
+	Batch Size                                                  16
+
+	Forced GVT                                                   0
+	Total GVT Computations                                       0
+	Total All Reduce Calls                                       0
+	Average Reduction / GVT                                    nan

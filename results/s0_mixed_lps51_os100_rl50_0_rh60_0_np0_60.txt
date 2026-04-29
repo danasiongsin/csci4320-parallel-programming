@@ -1,0 +1,343 @@
+./models/model --synch=1 --strategy=0 --lps=51 --order-size=100 --rsi-low=50.0 --rsi-high=60.0 --noise-prob=0.60 
+
+Wed Apr 29 15:31:06 2026
+
+ROSS Version: v8.1.1-dirty
+
+tw_net_start: Found world size to be 1 
+Successfully loaded 11615 rows of historical market data.
+
+ROSS Core Configuration: 
+	Total PEs                                                    1
+	Total KPs                                          [Nodes (1) x KPs (16)] 16
+	Total LPs                                                   51
+	Simulation End Time                                  100000.00
+	LP-to-PE Mapping                                        linear
+
+
+ROSS Event Memory Allocation:
+	Model events                                              2049
+	Network events                                              16
+	Total events                                              2064
+
+*** START SEQUENTIAL SIMULATION ***
+
+GVT #0: simulation 1% complete, max event queue size 92 (GVT = 1008.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 2% complete, max event queue size 92 (GVT = 2001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 3% complete, max event queue size 92 (GVT = 3001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 4% complete, max event queue size 92 (GVT = 4009.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 5% complete, max event queue size 92 (GVT = 5001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 6% complete, max event queue size 92 (GVT = 6001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 7% complete, max event queue size 92 (GVT = 7009.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 8% complete, max event queue size 92 (GVT = 8001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 9% complete, max event queue size 92 (GVT = 9001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 10% complete, max event queue size 92 (GVT = 10000.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 11% complete, max event queue size 92 (GVT = 11002.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 12% complete, max event queue size 92 (GVT = 12001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 13% complete, max event queue size 92 (GVT = 13000.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 14% complete, max event queue size 92 (GVT = 14004.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 15% complete, max event queue size 92 (GVT = 15001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 16% complete, max event queue size 92 (GVT = 16001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 17% complete, max event queue size 92 (GVT = 17006.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 18% complete, max event queue size 92 (GVT = 18001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 19% complete, max event queue size 92 (GVT = 19001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 20% complete, max event queue size 92 (GVT = 20008.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 21% complete, max event queue size 92 (GVT = 21001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 22% complete, max event queue size 92 (GVT = 22003.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 23% complete, max event queue size 92 (GVT = 23010.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 24% complete, max event queue size 92 (GVT = 24001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 25% complete, max event queue size 92 (GVT = 25005.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 26% complete, max event queue size 92 (GVT = 26012.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 27% complete, max event queue size 92 (GVT = 27001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 28% complete, max event queue size 92 (GVT = 28007.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 29% complete, max event queue size 92 (GVT = 29001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 30% complete, max event queue size 92 (GVT = 30001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 31% complete, max event queue size 92 (GVT = 31009.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 32% complete, max event queue size 92 (GVT = 32001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 33% complete, max event queue size 92 (GVT = 33001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 34% complete, max event queue size 92 (GVT = 34009.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 35% complete, max event queue size 92 (GVT = 35001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 36% complete, max event queue size 92 (GVT = 36001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 37% complete, max event queue size 92 (GVT = 37001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 38% complete, max event queue size 92 (GVT = 38001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 39% complete, max event queue size 92 (GVT = 39001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 40% complete, max event queue size 92 (GVT = 40001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 41% complete, max event queue size 92 (GVT = 41003.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 42% complete, max event queue size 92 (GVT = 42001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 43% complete, max event queue size 92 (GVT = 43001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 44% complete, max event queue size 92 (GVT = 44005.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 45% complete, max event queue size 92 (GVT = 45001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 46% complete, max event queue size 92 (GVT = 46001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 47% complete, max event queue size 92 (GVT = 47007.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 48% complete, max event queue size 92 (GVT = 48001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 49% complete, max event queue size 92 (GVT = 49002.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 50% complete, max event queue size 92 (GVT = 50009.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 51% complete, max event queue size 92 (GVT = 51001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 52% complete, max event queue size 92 (GVT = 52004.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 53% complete, max event queue size 92 (GVT = 53011.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 54% complete, max event queue size 92 (GVT = 54001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 55% complete, max event queue size 92 (GVT = 55006.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 56% complete, max event queue size 92 (GVT = 56001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 57% complete, max event queue size 92 (GVT = 57001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 58% complete, max event queue size 92 (GVT = 58008.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 59% complete, max event queue size 92 (GVT = 59001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 60% complete, max event queue size 92 (GVT = 60001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 61% complete, max event queue size 92 (GVT = 61009.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 62% complete, max event queue size 92 (GVT = 62001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 63% complete, max event queue size 92 (GVT = 63001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 64% complete, max event queue size 92 (GVT = 64009.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 65% complete, max event queue size 92 (GVT = 65001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 66% complete, max event queue size 92 (GVT = 66001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 67% complete, max event queue size 92 (GVT = 67001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 68% complete, max event queue size 92 (GVT = 68002.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 69% complete, max event queue size 92 (GVT = 69001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 70% complete, max event queue size 92 (GVT = 70001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 71% complete, max event queue size 92 (GVT = 71004.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 72% complete, max event queue size 92 (GVT = 72001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 73% complete, max event queue size 92 (GVT = 73001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 74% complete, max event queue size 92 (GVT = 74006.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 75% complete, max event queue size 92 (GVT = 75001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 76% complete, max event queue size 92 (GVT = 76001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 77% complete, max event queue size 92 (GVT = 77008.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 78% complete, max event queue size 92 (GVT = 78001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 79% complete, max event queue size 92 (GVT = 79003.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 80% complete, max event queue size 92 (GVT = 80010.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 81% complete, max event queue size 92 (GVT = 81001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 82% complete, max event queue size 92 (GVT = 82005.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 83% complete, max event queue size 92 (GVT = 83012.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 84% complete, max event queue size 92 (GVT = 84001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 85% complete, max event queue size 92 (GVT = 85007.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 86% complete, max event queue size 92 (GVT = 86001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 87% complete, max event queue size 92 (GVT = 87001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 88% complete, max event queue size 92 (GVT = 88009.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 89% complete, max event queue size 92 (GVT = 89001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 90% complete, max event queue size 92 (GVT = 90001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 91% complete, max event queue size 92 (GVT = 91009.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 92% complete, max event queue size 92 (GVT = 92001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 93% complete, max event queue size 92 (GVT = 93001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 94% complete, max event queue size 92 (GVT = 94001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 95% complete, max event queue size 92 (GVT = 95001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 96% complete, max event queue size 92 (GVT = 96001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 97% complete, max event queue size 92 (GVT = 97001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 98% complete, max event queue size 92 (GVT = 98003.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+GVT #0: simulation 99% complete, max event queue size 92 (GVT = 99001.0000) at Wed Apr 29 15:31:06 2026.
+AVL tree size: 0
+*** END SIMULATION ***
+
+EXCHANGE (GID 0) finished Day 5263 with 217300000.000000 total volume processed.
+TRADER    1 | Strategy: Noise Trader   | Final Value: $140464.00 | Profit: $ 40464.00
+TRADER    2 | Strategy: Noise Trader   | Final Value: $124050.00 | Profit: $ 24050.00
+TRADER    3 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER    4 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER    5 | Strategy: Noise Trader   | Final Value: $140802.00 | Profit: $ 40802.00
+TRADER    6 | Strategy: Noise Trader   | Final Value: $127073.00 | Profit: $ 27073.00
+TRADER    7 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER    8 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER    9 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   10 | Strategy: Noise Trader   | Final Value: $138185.00 | Profit: $ 38185.00
+TRADER   11 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   12 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   13 | Strategy: Trend Follower | Final Value: $202666.00 | Profit: $102666.00
+TRADER   14 | Strategy: Trend Follower | Final Value: $202666.00 | Profit: $102666.00
+TRADER   15 | Strategy: Trend Follower | Final Value: $202666.00 | Profit: $102666.00
+TRADER   16 | Strategy: Trend Follower | Final Value: $202666.00 | Profit: $102666.00
+TRADER   17 | Strategy: Noise Trader   | Final Value: $142428.00 | Profit: $ 42428.00
+TRADER   18 | Strategy: Noise Trader   | Final Value: $145696.00 | Profit: $ 45696.00
+TRADER   19 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   20 | Strategy: Noise Trader   | Final Value: $142177.00 | Profit: $ 42177.00
+TRADER   21 | Strategy: Trend Follower | Final Value: $202666.00 | Profit: $102666.00
+TRADER   22 | Strategy: Noise Trader   | Final Value: $108567.00 | Profit: $  8567.00
+TRADER   23 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   24 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   25 | Strategy: Trend Follower | Final Value: $202666.00 | Profit: $102666.00
+TRADER   26 | Strategy: Noise Trader   | Final Value: $160482.00 | Profit: $ 60482.00
+TRADER   27 | Strategy: Noise Trader   | Final Value: $145261.00 | Profit: $ 45261.00
+TRADER   28 | Strategy: Trend Follower | Final Value: $202666.00 | Profit: $102666.00
+TRADER   29 | Strategy: Noise Trader   | Final Value: $158126.00 | Profit: $ 58126.00
+TRADER   30 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   31 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   32 | Strategy: Noise Trader   | Final Value: $136813.00 | Profit: $ 36813.00
+TRADER   33 | Strategy: Trend Follower | Final Value: $202666.00 | Profit: $102666.00
+TRADER   34 | Strategy: Trend Follower | Final Value: $202666.00 | Profit: $102666.00
+TRADER   35 | Strategy: Noise Trader   | Final Value: $118550.00 | Profit: $ 18550.00
+TRADER   36 | Strategy: Trend Follower | Final Value: $202666.00 | Profit: $102666.00
+TRADER   37 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   38 | Strategy: Noise Trader   | Final Value: $124782.00 | Profit: $ 24782.00
+TRADER   39 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   40 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   41 | Strategy: Noise Trader   | Final Value: $180339.00 | Profit: $ 80339.00
+TRADER   42 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   43 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   44 | Strategy: Noise Trader   | Final Value: $154377.00 | Profit: $ 54377.00
+TRADER   45 | Strategy: Trend Follower | Final Value: $202666.00 | Profit: $102666.00
+TRADER   46 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   47 | Strategy: Noise Trader   | Final Value: $155595.00 | Profit: $ 55595.00
+TRADER   48 | Strategy: Mean Reversion | Final Value: $601997.00 | Profit: $501997.00
+TRADER   49 | Strategy: Noise Trader   | Final Value: $173201.00 | Profit: $ 73201.00
+TRADER   50 | Strategy: Noise Trader   | Final Value: $121457.00 | Profit: $ 21457.00
+
+	: Running Time = 0.1068 seconds
+
+TW Library Statistics:
+	Total Events Processed                                  292471
+	Events Aborted (part of RBs)                                 0
+	Events Rolled Back                                           0
+	Event Ties Detected in PE Queues                             0
+	Efficiency                                              100.00 %
+	Total Remote (shared mem) Events Processed                   0
+	Percent Remote Events                                     0.00 %
+	Total Remote (network) Events Processed                      0
+	Percent Remote Events                                     0.00 %
+
+	Total Roll Backs                                             0
+	Primary Roll Backs                                           0
+	Secondary Roll Backs                                         0
+	Fossil Collect Attempts                                      0
+	Total GVT Computations                                       0
+
+	Net Events Processed                                    292471
+	Event Rate (events/sec)                              2739287.6
+	Total Events Scheduled Past End Time                        51
+
+TW Memory Statistics:
+	Events Allocated                                          2065
+	Memory Allocated                                           984
+	Memory Wasted                                              414
+
+TW Data Structure sizes in bytes (sizeof):
+	PE struct                                                 1328
+	KP struct                                                  320
+	LP struct                                                  320
+	LP Model struct                                            104
+	LP RNGs                                                     80
+	Total LP                                                   504
+	Event struct                                               344
+	Event struct with Model                                    440
+
+TW Clock Cycle Statistics (MAX values in secs at 0.5120 GHz):
+	Initialization                                          0.1426
+	Priority Queue (enq/deq)                                0.0379
+	AVL Tree (insert/delete)                                0.0000
+	LZ4 (de)compression                                     0.0000
+	Buddy system                                            0.0000
+	Event Processing                                        0.0851
+	Event Cancel                                            0.0000
+	Event Abort                                             0.0000
+
+	GVT                                                     0.0000
+	Fossil Collect                                          0.0000
+	Primary Rollbacks                                       0.0000
+	Network Read                                            0.0000
+	Other Network                                           0.0000
+	Instrumentation (computation)                           0.0000
+	Instrumentation (write)                                 0.0000
+	Total Time (Note: Using Running Time above for Speedup)      0.1068
+
+TW GVT Statistics: MPI AllReduce
+	GVT Interval                                                16
+	GVT Real Time Interval (cycles)                    0
+	GVT Real Time Interval (sec)                        0.00000000
+	Batch Size                                                  16
+
+	Forced GVT                                                   0
+	Total GVT Computations                                       0
+	Total All Reduce Calls                                       0
+	Average Reduction / GVT                                    nan
