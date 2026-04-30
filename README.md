@@ -20,3 +20,4 @@ How to run:
 10. Try running a script. Scripts will run several tests at a time
 - chmod +x weakscaling.sh
 - ./weakscaling.sh
+- runtests.sh and weakscaling.sh will save each iteration of testing into its own .txt file into respective folders. Values are changable within the scripts - all parameters and # CPUs. View which folder the results are going to be placed within the script as well.
