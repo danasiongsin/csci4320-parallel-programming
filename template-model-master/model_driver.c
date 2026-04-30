@@ -16,7 +16,7 @@
 stock_data *g_stocks = NULL;
 int g_num_stocks = 0;
 
-static uint64_t g_computation_cycles = 0;
+uint64_t g_computation_cycles = 0;
 
 void model_init (state *s, tw_lp *lp) {
     int self = lp->gid;
